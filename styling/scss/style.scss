@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: cursive;
+    background-color: #252950 !important;
+
+        header{
+            background-color: #373B69;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            input{
+            margin: 15px;
+            border-radius: 50px;
+            background-color: transparent;
+            border: 2px solid #535896;
+            padding: .5rem;
+            color: #fff;
+            outline: #252950;
+        }
+        input::placeholder{
+            color: #666dbb;
+        }
+    }
+        
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .movie{
+            width: 300px;
+            background-color: #373B69;
+            box-shadow: 0 4px 5px #000;
+            margin: 1rem;
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+            .movie-info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+                color: #fff;
+                letter-spacing: 1px;
+                h3{
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 1.7rem;
+                    font-weight: bold;
+                }
+                span{
+                    background-color: #252950;
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 3px;
+                }
+                span.green{
+                    color: rgb(43, 179, 43);
+                }
+                span.orange{
+                    color: rgb(231, 165, 41);
+                }
+                span.red{
+                    color: rgb(255, 0, 0);
+                }
+            }
+            .overview{
+                h3{
+                    font-weight: bold;
+                }
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                background-color: rgba(255, 255, 255, 0.726);
+                transition: all .25s ease;
+                bottom: 0px;
+                left: 0px;
+                transform: translateY(100%);
+                transition: all .25s ease;
+                line-height: 1.7rem;
+                font-family: serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                padding: 1.7rem;
+            }
+            
+        }
+        .movie:hover .overview{
+            transform: translate(0);
+        }
+    }
+}
